@@ -10,6 +10,7 @@ namespace NetLinqApp
     {
         public string Name { set; get; } = "";
         public int Age { set; get; }
+        public Company Company { set; get; }
 
         public override string ToString()
         {
@@ -19,7 +20,12 @@ namespace NetLinqApp
 
     class Company
     {
-        public string Title { set; get; } = "";
-        public List<Employee> Employees { set; get; } = new();
+        public string Title { set; get; }
     }
+
+    //class Company
+    //{
+    //    public string Title { set; get; } = "";
+    //    public List<Employee> Employees { set; get; } = new();
+    //}
 }
